@@ -18,34 +18,11 @@ public class Parser {
 		}
 	};
 	
-	private static Map< Integer, String> numbersRoman = new HashMap<Integer, String>() {
-		{
-			put(1,"I");
-			put(2,"II");
-			put(3, "III");
-			put(4, "IV");
-			put(5, "V");
-			put(6, "VI");
-			put(7, "VII");
-			put(8, "VIII");
-			put(9, "IX");
-			put(10, "X");
-		}
-	};
-
+	
 	public static boolean checkIfRoman(String s) {
 		if (romanNumbers.containsKey(s))
 			return true;
 		return false;
-
-	}
-
-	public static String getRoman(int i) {
-		return numbersRoman.get(i);
-
-	}
-	public static int getInt(String s) {
-		return romanNumbers.get(s);
 
 	}
 	
